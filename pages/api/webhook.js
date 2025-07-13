@@ -1,5 +1,5 @@
 // pages/api/webhook.js
-import { buffer } from 'micro'
+import getRawBody from 'raw-body'
 import { stripe } from '../../lib/stripe'
 
 export const config = {
@@ -13,7 +13,7 @@ export default async function handler(req, res) {
   }
 
   const sig = req.headers['stripe-signature']
-  const buf = await buffer(req)
+  const buf = await getRawBody(req)
 
   let event
   try {
