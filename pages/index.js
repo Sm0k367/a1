@@ -23,7 +23,8 @@ export default function Home() {
           EPIC TECH AI OS
         </h1>
         <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>
-          Unlock your AI-First Operating System. 7-day free trial, then $29.99/mo.
+          Unlock your AI-First Operating System.<br/>
+          7-day free trial, then $29.99/mo.
         </p>
         <button
           style={{
@@ -36,8 +37,8 @@ export default function Home() {
             cursor: 'pointer'
           }}
           onClick={() => {
-            window.location.href = 
-              'https://buy.stripe.com/3cI8wQgj74LI592cDM0Fi05';
+            window.location.href =
+              'https://buy.stripe.com/3cI8wQgj74LI592cDM0Fi05'
           }}
         >
           Start Free Trial
